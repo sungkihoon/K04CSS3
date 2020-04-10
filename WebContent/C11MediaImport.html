@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C11MediaImport.html</title>
+    <style>
+        /*
+        @import
+        -<link>태그를 대체할 수 있다
+        -style태그 안에서 사용해야하고 반드시 최상단에 선언해야한다
+        -CSS파일에 오류가 있는경우 다운로드 하지 않는다
+        */
+        @import url('./style/import.css');
+
+        .content{
+            background-color: black; color: red;
+        }
+        /*
+        @media
+        - 해당 웹페이지를 디바이스의 종류에 따라 각각 다르게 화면을 
+        구성할수있게 해주는 기능을 가지고 있다.
+        -스크린용과 프린트용을 구분해야할때 사용한다
+        */
+        @media screen {
+            .content{
+                background-color:black; color:white;
+            }
+        }
+        @media print{
+            .content{
+                background-color: red; color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>media 속성</h2>
+    <div class="content">
+        <p>
+            <h3>
+            (부산=연합뉴스) 김선호 기자 = 부산 한 하수도 공사장에서 작업자 3명이 고농도 일산화탄소에 질식해 숨진 사고를 조사하는 경찰은 일산화탄소 농도가 갑자기 기준치 이상으로 치솟은 정황에 대해 집중적으로 수사를 벌이고 있다.
+            <br><br>
+            부산 사하경찰서는 공사장 현장 소장으로부터 당시 사고 정황 등과 관련 진술을 확보하고 사고 원인을 조사하고 있다고 10일 밝혔다.
+            <br><br>
+            현장 소장은 경찰에서 "9일 오후 맨홀 지하 3ｍ가량을 내려가 수평으로 16ｍ를 이동한 A(52) 씨가 굴착작업을 위해 철근을 절단하는 용접을 하던 중 폭발음이 한 번 들렸다"고 진술했다.
+            <br><br>
+            이어 "이 폭발음을 듣고 작업자 B(59), C(56) 씨가 연이어 맨홀 안으로 확인하러 들어갔지만 역시 나오지 않았다"고 말했다.
+            <br><br>
+            사고 직후 경찰이 맨홀 내부 가스 수치를 측정한 결과 일산화탄소 수치가 허용농도인 50ppm의 20배를 넘는 1천ppm 이상으로 파악됐다.
+            <br><br>
+            일산화탄소가 6천500ppm 이상인 상황에 노출되면 10분 안에 사망할 정도로 위험한 것으로 알려졌다.
+            </h3>
+        </p>
+    </div>
+</body>
+</html>

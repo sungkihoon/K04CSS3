@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contbrand="width=device-width, initial-scale=1.0">
+    <title>Registration.html</title>
+    <style>
+        p.text{
+            color: silver; font-size: 8px; float: left;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="float: left;">회원정보</h2>
+    <h2 style="float: left; color: red;">&nbsp;(필수)</h2>
+    <table style="clear:both; border-spacing: 15px;">
+        <tr>
+            <td style="width: 200px;">아이디</td>
+            <td style="color: red; font-size: 8px;">
+                <input type="text" size="16" placeholder="4자리 이상" style="height: 30px;"/>
+                <input type="submit" value="아이디중복확인"
+                    style="background-color: #00AFA0; color: white; height: 40px;"/>
+                아이디 형식에 맞춰주세요(영문, 숫자, 조합 4문자 이상)
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 200px; height: 30px;">비밀번호</td>
+            <td style="color: silver; font-size: 8px;">
+                <input type="text" size="16" style="height: 30px;"/>&nbsp;
+                &nbsp;8~20자리의 영문, 숫자 조합(영문, 숫자, 특수 기호
+                조합을 권장합니다.)
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 200px; height: 30px;">비밀번호확인</td>
+            <td>
+                <input type="text" size="16" style="height: 30px;"/>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 200px; height: 30px;">이름</td>
+            <td>
+                <input type="text" size="16" style="height: 30px;"/>
+            </td>
+        </tr> 
+        <tr>
+            <td style="width: 200px; height: 30px;">성별</td>
+            <td>
+                <input type="radio" name="Sex" value="M"
+                checked="checked"/>남성&nbsp;&nbsp;
+                <input type="radio" name="Sex" value="W"/>여성
+            </td>
+        </tr> 
+        <tr>
+            <td style="width: 200px; height: 30px;">생년월일</td>
+            <td>
+                <input type="number" size="12" style="height: 30px;"/>&nbsp;&nbsp;
+                <input type="radio" name="Calender" value="S"
+                checked="checked"/>양력&nbsp;&nbsp;
+                <input type="radio" name="Calender" value="L"/>음력
+            </td>
+        </tr> 
+        <tr>
+            <td style="width: 200px; height: 30px;">이메일</td>
+            <td style="color: silver; font-size: 8px;">
+                <input type="text" size="16" style="height: 30px;"/>&nbsp;
+                <span style="color: black; font-size: 16px;">
+                    @
+                </span>
+                <input type="text" size="16" style="height: 30px;"/>
+                <select name="email" style="height: 35px;">
+                    <option value="naver">naver.com</option>
+                    <option value="hanmail">hanmail.net</option>
+                    <option value="yahoo">yahoo.co.kr</option>
+                    <option value="nate">nate.com</option>
+                    <option value="gmail">gmail.com</option>
+                </select>
+                <br>
+                이메일 수신동의 시, 신상품/할인혜택/이벤트 등의 정보를
+                받아보실 수 있습니다.<br />수신동의 거부 시에도
+                기본서비스(주문배송 메일)는 발송됩니다.&nbsp;&nbsp;
+                <span style="color: black; font-size: 16px;">
+                    <input type="radio" name="check1" value="Y"
+                    checked="checked"/>예&nbsp;
+                    <input type="radio" name="check1" value="N"/>아니오
+                </span>
+            </td>
+        </tr> 
+        <tr>
+            <td style="width: 200px; height: 30px;">휴대전화</td>
+            <td style="color: silver; font-size: 8px;">
+                <input type="text" size="4" style="height: 30px;"/>
+                <span style="color: black; font-size: 16px;">-</span>
+                <input type="text" size="4" style="height: 30px;"/>
+                <span style="color: black; font-size: 16px;">-</span>
+                <input type="text" size="4" style="height: 30px;"/>
+                <br>
+                할인혜택과 이벤트 등의 소식 안내를 SMS로 받아보실 수 
+                있습니다.<br />수신동의 거부 시에도 기본서비스는 발송됩니다.
+                &nbsp;&nbsp;
+                <span style="color: black; font-size: 16px;">
+                    <input type="radio" name="check2" value="Y"
+                    checked="checked"/>예&nbsp;
+                    <input type="radio" name="check2" value="N"/>아니오   
+                </span>           
+            </td>
+        </tr>  
+    </table>
+    <br><br>
+
+
+    <h2 style="float: left;">회원정보</h2>
+    <h2 style="float: left; color: red;">&nbsp;(필수)</h2>
+    <table style="clear:both; border-spacing: 15px; background-color: #F5F5F5;">
+        <tr>
+            <td style="width: 180px;">일반전화</td>
+            <td>
+                <input type="text" size="4" style="height: 30px;"/>&nbsp;-&nbsp;
+                <input type="text" size="4" style="height: 30px;"/>&nbsp;-&nbsp;
+                <input type="text" size="4" style="height: 30px;"/>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 180px;">주소</td>
+            <td>
+                <input type="text" size="16" style="height: 30px;"/>
+                <input type="submit" value="우편번호검색"
+                    style="background-color: #00AFA0; color: white;height: 40px;"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" size="16" style="height: 30px;"/>
+                <input type="text" size="16" style="height: 30px;"/>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 180px;">직업</td>
+            <td>
+                <select name="job" style="height: 35px;">
+                    <option value="choice">::선택::</option>
+                    <option value="slave">개발자</option>
+                    <option value="presidbrand">대통령</option>
+                    <option value="police officer">경찰</option>
+                    <option value="fire fighter">소방관</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 180px;">관심 브랜드</td>
+            <td>
+                <table>
+                    <tr>
+                        <td style="width: 180px;">
+                            <input type="checkbox" name="inter" value="brand"/>한빛미디어
+                        </td>
+                        <td style="width: 180px;">
+                            <input type="checkbox" name="inter" value="brand"/>한빛아카데미
+                        </td>
+                        <td>
+                            <input type="checkbox" name="inter" value="brand"/>한빛비즈
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 180px;">
+                            <input type="checkbox" name="inter" value="brand"/>한빛라이프
+                        </td>
+                        <td style="width: 180px;">
+                            <input type="checkbox" name="inter" value="brand"/>리얼타임 eBook
+                        </td>
+                        <td>
+                            <input type="checkbox" name="inter" value="brand"/>MAKE
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 180px;">
+                            <input type="checkbox" name="inter" value="brand"/>한빛에듀
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 180px;">관심 분야</td>
+            <td>
+                <table>
+                    <tr>
+                        <td style="width: 180px;">
+                            <input type="checkbox" name="inter" value="hobby"/>프로그래밍 언어
+                        </td>
+                        <td style="width: 180px;">
+                            <input type="checkbox" name="inter" value="hobby"/>웹
+                        </td>
+                        <td>
+                            <input type="checkbox" name="inter" value="hobby"/>모바일/게임
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 180px;">
+                            <input type="checkbox" name="inter" value="hobby"/>데이터베이스
+                        </td>
+                        <td style="width: 180px;">
+                            <input type="checkbox" name="inter" value="hobby"/>네트워크/보안
+                        </td>
+                        <td>
+                            <input type="checkbox" name="inter" value="hobby"/>IT자격증/수험서
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 180px;">
+                            <input type="checkbox" name="inter" value="hobby"/>OA/오피스
+                        </td>
+                        <td style="width: 180px;">
+                            <input type="checkbox" name="inter" value="hobby"/>디자인
+                        </td>
+                        <td style="width: 180px;">
+                            <input type="checkbox" name="inter" value="hobby"/>사진/예술
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 180px;">
+                            <input type="checkbox" name="inter" value="hobby"/>경제/경영
+                        </td>
+                        <td style="width: 180px;">
+                            <input type="checkbox" name="inter" value="hobby"/>자기계발
+                        </td>
+                        <td style="width: 180px;">
+                            <input type="checkbox" name="inter" value="hobby"/>인문/사회/과학
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 180px;">
+                            <input type="checkbox" name="inter" value="hobby"/>여행/취미
+                        </td>
+                        <td style="width: 180px;">
+                            <input type="checkbox" name="inter" value="hobby"/>가정/건강/유아
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="width: 180px;">
+                            <input type="checkbox" name="inter" value="hobby"/>기타:
+                            <input type="text" size="16"/>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>       
+    </table>
+    <input type="submit" value="회원가입하기"
+        style="background-color: #00AFA0; color: white;height: 40px;
+        margin-left: 400px;"/> 
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

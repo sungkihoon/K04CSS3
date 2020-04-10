@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*전체선택자를 통해 문서의 기본스타일 지정*/
+        *{margin: 0; padding: 0; font-family: verdana;}
+
+        /*Block 엘리먼트 자체에 대한 가운데 정렬을 위해 margin이 사용된다*/
+        #AllWrap{
+            margin: 0 auto; text-align: center;
+        }
+        #PartWrap{
+            width: 100%; text-align: left;
+            border: 1px solid blue; 
+        }
+        #header{
+            border: 1px solid blue; text-align: center;
+            height: 100%; line-height: 100px;
+        }
+        /*
+        <li>태그의 기본 블릿을 제거한다
+        ovrerflow의 속성값
+            visible : 컨텐츠가 박스를 넘어가도 보임
+            hidden : 박스를 벗어난 부분은 숨겨짐
+            scroll : 컨텐츠와는 상관없이 무조건 스크롤바 생김
+            auto : 컨텐츠릐 상황에 따라 스크롤바 토글됨
+        */
+        #nav ul {
+            list-style: none;
+            overflow: hidden;
+        }
+        #nav ul li{
+            font-size: 1.5em; font-weight: bold; height: 50px;
+            width: 20%; float: left; border: 1px solid blue;
+            text-align: center; line-height: 50px;
+            /*전체넓이에 패딩과 보더를 포함하여 계산함*/
+            box-sizing: border-box;
+        }
+        #ContentWrap #content > h2{
+            border-bottom: 1px #808080 solid;
+            font-size: 2em;
+        }
+        #content{
+            padding: 20px;
+        }
+        #footer{
+            font-size: 2em; font-weight: bold; height: 100px;
+            line-height: 100px; text-align: center;
+            border: 1px solid blue;
+        }
+        /*스크린의 크기가 640이상일때 (혹은 디바이스)에서의 보임설정*/
+        @media screen and (max-width:640px){
+            #AllWrap{width:100%}
+            #content p{
+                font-size:2em; color: black;
+            }
+        }
+        /*스크린의 크기가 1000이상*/
+        @media screen and (min-width:1000px){
+            #AllWrap{width:80%}
+            #content p{
+                font-size:1em; color: green;
+            }
+        }
+        /*스크린의 크기가 641~999px 사이 */
+        @media screen and (min-width:640px) and (max-width: 999px){
+            #AllWrap{width:100%}
+            #content p{
+                font-size:1.5em; color: red;
+                background-color: black;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="AllWrap">
+        <div id="PartWrap">
+            <div id="header">
+                <h1>HEADER</h1>
+            </div>
+            <div id="nav">
+                <ul>
+                    <li>메뉴1입니다</li>
+                    <li>메뉴2</li>
+                    <li>메뉴3</li>
+                    <li>메뉴4</li>
+                    <li>메뉴5</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="ContentWrap">
+            <div id="content">
+                <h2>부산 맨홀 질식사고 "용접 중 폭발 있었다"…경찰 원인 조사</h2>
+                <p>
+                    (부산=연합뉴스) 김선호 기자 = 부산 한 하수도 공사장에서 작업자 3명이 고농도 일산화탄소에 질식해 숨진 사고를 조사하는 경찰은 일산화탄소 농도가 갑자기 기준치 이상으로 치솟은 정황에 대해 집중적으로 수사를 벌이고 있다.
+            <br><br>
+            부산 사하경찰서는 공사장 현장 소장으로부터 당시 사고 정황 등과 관련 진술을 확보하고 사고 원인을 조사하고 있다고 10일 밝혔다.
+            <br><br>
+            현장 소장은 경찰에서 "9일 오후 맨홀 지하 3ｍ가량을 내려가 수평으로 16ｍ를 이동한 A(52) 씨가 굴착작업을 위해 철근을 절단하는 용접을 하던 중 폭발음이 한 번 들렸다"고 진술했다.
+            <br><br>
+            이어 "이 폭발음을 듣고 작업자 B(59), C(56) 씨가 연이어 맨홀 안으로 확인하러 들어갔지만 역시 나오지 않았다"고 말했다.
+            <br><br>
+            사고 직후 경찰이 맨홀 내부 가스 수치를 측정한 결과 일산화탄소 수치가 허용농도인 50ppm의 20배를 넘는 1천ppm 이상으로 파악됐다.
+            <br><br>
+            일산화탄소가 6천500ppm 이상인 상황에 노출되면 10분 안에 사망할 정도로 위험한 것으로 알려졌다.
+                </p>
+            </div>
+        </div>
+
+        <div id="footer">
+            <h1>FOOTER</h1>
+        </div>
+
+    </div>
+</body>
+</html>
